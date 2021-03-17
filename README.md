@@ -6,22 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+***
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 프로젝트 구성
+![image](https://user-images.githubusercontent.com/80272087/111505859-67b4b780-878c-11eb-9701-037455e841e1.png)  
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+app/layout/sidebar - 좌측 메뉴  
+app/main/content/head - 컨텐츠 제목  
+app/main/content/pages/compute, .../kubernetes - compute 메뉴, kubernetes 메뉴 페이지 컴포넌트  
 
-## Further help
+Content Module lazy loading
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 화면
+![main](https://user-images.githubusercontent.com/80272087/111505571-1c020e00-878c-11eb-9d1c-716d9d2e1c07.png)  
+Sidebar에서 제목 클릭으로 각 메뉴 페이지로 이동합니다.  
+페이지 이동 시 Sidebar 및 Content Header는 같은 컴포넌트를 사용하며 Content 컴포넌트만 변경됩니다.  
+
+### Responsive
+![image](https://user-images.githubusercontent.com/80272087/111506899-72238100-878d-11eb-8bba-04d5ce01b7cd.png)  
+Sidebar는 가로 768px 이상 해상도에서 활성화됩니다.
