@@ -28,5 +28,5 @@ Sidebar에서 제목 클릭으로 각 메뉴 페이지로 이동합니다.
 페이지 이동 시 Sidebar 및 Content Header는 같은 컴포넌트를 사용하며 Content 컴포넌트만 변경됩니다.  
 
 ### Responsive
-![image](https://user-images.githubusercontent.com/80272087/111506899-72238100-878d-11eb-8bba-04d5ce01b7cd.png)  
+![image](https://user-images.githubusercontent.com/80272087/111507572-258c7580-878e-11eb-97b6-ef48b5ed075e.png)
 Sidebar는 가로 768px 이상 해상도에서 활성화됩니다.
