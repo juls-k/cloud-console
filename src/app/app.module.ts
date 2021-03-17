@@ -9,12 +9,7 @@ import { MainComponent } from './main/main.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    // SidebarComponent,
-    // SidebarHeadComponent,
-    // SidebarMenuComponent,
-    // ContentHeadComponent,
-    // ContentComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
