@@ -1,0 +1,30 @@
+<div>
+    <div class="tableWrap">
+        <table>
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col style="width: 50%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td>No.</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Body</td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let row of dataList;">
+                    <tr>
+                        <td>{{row.id}}</td>
+                        <td>{{row.name}}</td>
+                        <td>{{row.email}}</td>
+                        <td>{{row.body}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>

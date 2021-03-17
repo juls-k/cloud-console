@@ -1,1 +1,2 @@
-<div class="sidebar-head-text">Compute Engine</div>
+<div class="sidebar-head-text" (click)="routeURL('kubernetes');" *ngIf="getUrl()">Compute Engine</div>
+<div class="sidebar-head-text" (click)="routeURL('compute');" *ngIf="!getUrl()">Kubernetes Engine</div>

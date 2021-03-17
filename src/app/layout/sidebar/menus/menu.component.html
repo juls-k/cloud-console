@@ -1,16 +1,28 @@
-<div [routerLink]="['/compute/instances']">VM instances</div>
-<div [routerLink]="['/compute/groups']">Instance groups</div>
-<div [routerLink]="['/compute/templates']">Instance templates</div>
-<div [routerLink]="['/compute/soletenant']">Sole-tenant nodes</div>
-<div [routerLink]="['/compute/machineimages']">Machine images</div>
-<div [routerLink]="['/compute/disks']">Disks</div>
-<div [routerLink]="['/compute/snapshots']">Snapshots</div>
-<div [routerLink]="['/compute/images']">Images</div>
-<div [routerLink]="['/compute/tpu']">TPUs</div>
-<div [routerLink]="['/compute/migrate']">Migrate for Compute Engine</div>
-<div [routerLink]="['/compute/discounts']">Committed use discounts</div>
-<div [routerLink]="['/compute/metadata']">Metadata</div>
-<div [routerLink]="['/compute/healthcheck']">Health checks</div>
-<div [routerLink]="['/compute/zones']">Zones</div>
-<div [routerLink]="['/compute/endpoint']">Network endpoint groups</div>
-<div [routerLink]="['/compute/operations']">Operations</div>
+<div *ngIf="getUrl()" class="menu-wrap">
+    <div class="menu" [routerLink]="['/compute/instances']" routerLinkActive="active">VM instances</div>
+    <div class="menu" [routerLink]="['/compute/groups']" routerLinkActive="active">Instance groups</div>
+    <div class="menu" [routerLink]="['/compute/templates']" routerLinkActive="active">Instance templates</div>
+    <div class="menu" [routerLink]="['/compute/soletenant']" routerLinkActive="active">Sole-tenant nodes</div>
+    <div class="menu" [routerLink]="['/compute/machineimages']" routerLinkActive="active">Machine images</div>
+    <div class="menu" [routerLink]="['/compute/disks']" routerLinkActive="active">Disks</div>
+    <div class="menu" [routerLink]="['/compute/snapshots']" routerLinkActive="active">Snapshots</div>
+    <div class="menu" [routerLink]="['/compute/images']" routerLinkActive="active">Images</div>
+    <div class="menu" [routerLink]="['/compute/tpu']" routerLinkActive="active">TPUs</div>
+    <div class="menu" [routerLink]="['/compute/migrate']" routerLinkActive="active">Migrate for Compute Engine</div>
+    <div class="menu" [routerLink]="['/compute/discounts']" routerLinkActive="active">Committed use discounts</div>
+    <div class="menu" [routerLink]="['/compute/metadata']" routerLinkActive="active">Metadata</div>
+    <div class="menu" [routerLink]="['/compute/healthcheck']" routerLinkActive="active">Health checks</div>
+    <div class="menu" [routerLink]="['/compute/zones']" routerLinkActive="active">Zones</div>
+    <div class="menu" [routerLink]="['/compute/endpoint']" routerLinkActive="active">Network endpoint groups</div>
+    <div class="menu" [routerLink]="['/compute/operations']" routerLinkActive="active">Operations</div>
+</div>
+<div *ngIf="!getUrl()" class="menu-wrap">
+    <div class="menu" [routerLink]="['/kubernetes/clusters']" routerLinkActive="active">Clusters</div>
+    <div class="menu" [routerLink]="['/kubernetes/workloads']" routerLinkActive="active">Workloads</div>
+    <div class="menu" [routerLink]="['/kubernetes/servicesingress']" routerLinkActive="active">Services & Ingress</div>
+    <div class="menu" [routerLink]="['/kubernetes/applications']" routerLinkActive="active">Applications</div>
+    <div class="menu" [routerLink]="['/kubernetes/configurations']" routerLinkActive="active">Configurations</div>
+    <div class="menu" [routerLink]="['/kubernetes/storage']" routerLinkActive="active">Storage</div>
+    <div class="menu" [routerLink]="['/kubernetes/objectbrowser']" routerLinkActive="active">Object Browser</div>
+    <div class="menu" [routerLink]="['/kubernetes/migratecontainer']" routerLinkActive="active">Migrate to containers</div>
+</div>

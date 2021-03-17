@@ -1,16 +1,13 @@
 
 .wrap{
-    margin-top:36px;
-    height:calc(100vh - 72px);
+    height:calc(100vh - 20px);
     min-height:824px;
-    background-color: #C4C4C4;
     overflow-y:auto;
     position: relative;
 }
 
 .sidebar {
     float: left;
-    background-color: #ddd; 
     width: 280px; 
     height: 100%;
 }
@@ -35,13 +32,22 @@
 
 .sidebar-head-text {
     width:280px;
+    cursor: pointer;
 }
-.sidebar-menu div {
+.sidebar-menu {
+    height: 94%;
+}
+.sidebar-menu .menu {
     height: 20px;
     padding: 10px;
     background-color: white
 }
-.sidebar-menu div:hover {
+.sidebar-menu .menu.active {
+    background-color: #eff6ff;
+    color: #7681d5;
+    cursor: pointer;
+}
+.sidebar-menu .menu:hover {
     background-color: #eff6ff;
     color: #7681d5;
     cursor: pointer;
@@ -56,4 +62,52 @@
 }
 .content-head-text {
     padding-left: 15px;
+}
+.content-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: calc(100% - 42px);
+    height: 90%;
+    padding: 20px;
+}
+.menu-wrap {
+    border: 1px solid #ddd;
+    height: 100%;
+}
+
+.tableWrap {
+    overflow-y: auto;
+    height: 868px;
+}
+
+.tableWrap table {
+    height: 100%;
+}
+.tableWrap table tr {
+    display: table;
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+    position: relative;
+}
+
+.tableWrap table th {
+    display: table-cell;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: normal;
+    letter-spacing: 0;
+    padding: 0 8px;
+}
+
+.tableWrap table td {
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 0 8px;
+    text-align: left;
 }
